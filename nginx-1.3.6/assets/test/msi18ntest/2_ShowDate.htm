@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Show Date</title>
+</head>
+<body>
+
+<h1>Date</h1>
+
+<ul id="results"></ul>
+
+
+</body>
+<script src="Scripts/jquery-1.4.2.js" type="text/javascript"></script>
+<script src="Scripts/jquery.glob.js" type="text/javascript"></script>
+<script src="Scripts/globinfo/jQuery.glob.all.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    // Display date for each culture
+    var today = new Date();
+    var results = "";
+    $.each($.cultures, function (i, culture) {
+        results += "<li>"
+            + culture.englishName + " = "
+            + $.format(today, "D", culture.name)
+            +"</li>";
+    });
+    $("#results").html(results);  
+
+</script>
+</html>

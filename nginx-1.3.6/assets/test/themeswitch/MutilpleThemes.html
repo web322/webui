@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>多主题</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <!--应用base主题和lightness主题-->
+    <link rel="Stylesheet" type="text/css" href="themes/base/jquery.ui.all.css" />
+    <link rel="Stylesheet" type="text/css" href="themes/theme_lightness/jquery.ui.all.css" />
+    <link rel="Stylesheet" type="text/css" href="themes/demos.css" />
+
+     <script type="text/javascript" src="../../libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="themes/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="themes/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="themes/ui/jquery.ui.accordion.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".accordion").accordion({
+                collapsible: true
+            });
+        });
+	</script>
+
+</head>
+<body>
+<div class="demo">
+  <h1> Base Demo</h1>
+  <div class="accordion">
+    <h3> <a href="#">Section 1</a></h3>
+    <div>
+      <p> A.</p>
+    </div>
+    <h3> <a href="#">Section 2</a></h3>
+    <div>
+      <p> B. </p>
+    </div>
+  </div>
+  <div class="space"> </div>
+    <h1> Lightness Demo</h1>
+  <!--主题中如果包含css scope，需要指定css scope，才能让主题生效-->
+  <div class="lightness">
+    <div class="accordion">
+      <h3> <a href="#">Section 1</a></h3>
+      <div>
+        <p> A.</p>
+      </div>
+      <h3> <a href="#">Section 2</a></h3>
+      <div>
+        <p> B. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

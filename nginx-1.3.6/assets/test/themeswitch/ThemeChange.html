@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>主题切换</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="Stylesheet" type="text/css" href="themes/theme_lightness/jquery.ui.all.css" id="theme" />
+    <link rel="Stylesheet" type="text/css" href="themes/demos.css" />
+    <script type="text/javascript" src="../../libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="themes/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="themes/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="themes/ui/jquery.ui.accordion.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	        $('#theme_changer').change(function() {
+	            var theme = $(this).find("option:selected").val();
+	            $('#theme').attr('href', theme);
+	        });
+	    });
+	</script>
+
+</head>
+
+
+<body>
+
+
+    <div class="demo">
+        <div>
+            请选择主题：
+            <select id="theme_changer">
+                <option value="themes/base/jquery.ui.all.css">Base Theme</option>
+                <option value="themes/theme_lightness/jquery.ui.all.css" selected="selected">Lightness Theme</option>
+            </select>
+        </div>
+        <div class="space"></div>
+        <div class="lightness">
+            <div id="accordion">
+                <h3><a href="#">Section 1</a></h3>
+                <div>
+                    <p>A.</p>
+                </div>
+                <h3><a href="#">Section 2</a></h3>
+                <div>
+                    <p>B. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

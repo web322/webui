@@ -1,0 +1,38 @@
+/*
+ * jQuery UI Button 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.lightness .ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.lightness .ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.lightness .ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+
+/*button text element */
+.lightness .ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.lightness .ui-button-text-only .ui-button-text { padding: .4em 1em; }
+.lightness .ui-button-icon-only .ui-button-text, .lightness .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.lightness .ui-button-text-icon-primary .ui-button-text, .lightness .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.lightness .ui-button-text-icon-secondary .ui-button-text, .lightness .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.lightness .ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.ui-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+.lightness .ui-button-icon-only .ui-icon, .lightness .ui-button-text-icon-primary .ui-icon, .lightness .ui-button-text-icon-secondary .ui-icon, .lightness .ui-button-text-icons .ui-icon, .lightness .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.lightness .ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.lightness .ui-button-text-icon-primary .ui-button-icon-primary, .lightness .ui-button-text-icons .ui-button-icon-primary, .lightness .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.lightness .ui-button-text-icon-secondary .ui-button-icon-secondary, .lightness .ui-button-text-icons .ui-button-icon-secondary, .lightness .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.lightness .ui-button-text-icons .ui-button-icon-secondary, .lightness .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+
+/*button sets*/
+.lightness .ui-buttonset { margin-right: 7px; }
+.lightness .ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
