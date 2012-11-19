@@ -833,3 +833,11 @@
 2012/11/18 19:19:28 [notice] 29288#29052: signal process started
 2012/11/18 19:20:01 [crit] 28988#30612: CreateProcess("nginx") failed (2: The system cannot find the file specified)
 2012/11/18 19:20:01 [alert] 28988#30612: could not respawn worker
+2012/11/19 21:05:18 [emerg] 9004#8844: CreateDirectory() "D:\webui\nginx-1.3.6/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2012/11/19 21:07:15 [emerg] 11936#11084: CreateDirectory() "D:\webui\nginx-1.3.6/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2012/11/19 21:07:51 [emerg] 16188#14924: CreateDirectory() "D:\webui\nginx-1.3.6/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2012/11/19 21:08:18 [error] 16952#17824: *1 CreateFile() "D:\webui\nginx-1.3.6/assets/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2012/11/19 21:08:55 [error] 16952#17824: *1 CreateFile() "D:\webui\nginx-1.3.6/assets/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2012/11/19 21:09:01 [error] 16952#17824: *1 CreateFile() "D:\webui\nginx-1.3.6/assets/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2012/11/19 21:09:04 [error] 16952#17824: *1 CreateFile() "D:\webui\nginx-1.3.6/assets/images/favicon.ico" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /images/favicon.ico HTTP/1.1", host: "localhost"
+2012/11/19 21:09:47 [error] 16952#17824: *1 CreateFile() "D:\webui\nginx-1.3.6/assets/images/favicon.ico" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /images/favicon.ico HTTP/1.1", host: "localhost"

@@ -1,0 +1,3 @@
+#ignore logs and temp dir
+./nginx-1.3.6/logs/
+./nginx-1.3.6/temp/
