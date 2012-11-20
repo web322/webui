@@ -1,8 +1,6 @@
     if(typeof console === 'undefined')
 	{
-	   console={
-	       log:function(){}
-	   };
+	   console.log=console.error=console.warn=function(){};
 	   
 	}
 	
@@ -25,5 +23,6 @@
 	  locale: 'zh-cn'
 	
 	});
+	
 	
 	
