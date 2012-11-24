@@ -16,4 +16,6 @@ nginx -s reopen 打开日志文件
 ###3.Node和SPM(seajs package manager)配置 
      从git服务器clone的代码建议放到D盘，因为npm config 的cache /prefix 都设置为D:\webui\node-0.8.14\npm
 	 运行的时候添加“d:\webui\node-0.8.14\nodejs;D:\webui\node-0.8.14\npm”到PATH环境变量。
+     可以使用npm node config查询
+     
    
