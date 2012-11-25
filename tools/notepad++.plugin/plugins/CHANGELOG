@@ -1,0 +1,42 @@
+/* QuickText - Quick editing tags for Notepad++
+    Copyright (C) 2006  João Moreno (alph.pt@gmail.com)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+0.2.1
+
+* [M] Changed default key to Tab.
+* [M] Moved QuickText.ini from \QuickText.ini to \plugins\Config\QuickText.ini
+* [M] Increased substitution text length (max is 8bytes number of chars)
+* [+] Valid tag keys (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&*()_+{}|:?><`-=[]\/.,)
+* [+] Global tag added. Current language tag takes priority over Global tag
+* [M] bigger and friendlier logic for inputting tag/subtitution
+* [M] fixed tab indenting of HTML UL tag under UNIX format
+
+0.2
+
+* [M] Fixed the ';' char compatibilities.
+* [M] Fixed line break system compatibilities.
+* [M] A few changes in the INIMap class.
+* [+] Possibility to create new tags, when inside a QuickText editing.
+* [+] Auto-magical indenting features.
+* [+] New language tags added: C, C++, HTML.
+* [+] Added configuration GUI. :)
+
+0.1
+
+* Creation.
+
