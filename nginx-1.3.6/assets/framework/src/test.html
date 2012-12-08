@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<div id="content">module test</div>
+<script src="../modules/seajs/1.3.1/sea.js"></script>
+<script src="../modules/seajs/sea-config.js"></script>
+<script>
+
+
+
+seajs.use(['jquery.themeswitch', 'jquery.cookie', 'jquery.ui'], function ($) {
+    
+    console.log($.cookie('theme'));
+    
+    for (var key in seajs.cache) {
+        
+        console.log(key + "-->" + seajs.cache[key]);
+    }
+    
+    console.dir(seajs.cache);
+    
+});
+
+seajs.use(['jquery.hashchange']);
+
+// seajs.use('./main.js');
+    
+   
+</script>
+</body>
+</html>

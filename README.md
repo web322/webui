@@ -1,21 +1,32 @@
 # WebUI Project
-##Ä¿±ê
-   ¹¹½¨Ò»¸ö´¿Ç°¶ËµÄÍ¨ÓÃ½â¾ö·½°¸
+##ç›®æ ‡
+   æ„å»ºä¸€ä¸ªå‰ç«¯çš„é€šç”¨è§£å†³æ–¹æ¡ˆï¼Œä½¿ç”¨seajsåšä¸ºæ¨¡å—ç®¡ç†ï¼Œé›†æˆjquery +jqueryui+ bootstrap(css framework)+ backboneï¼Œæ”¯æŒå¤§è§„æ¨¡çš„javascriptå•é¡µé¢ç¨‹åºçš„å¼€å‘ã€‚  
+   æ•´ç†è®¾è®¡æ€è·¯æºè‡ª[large-scale-javascript-application-architecture](https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture)ã€‚  
 
-##Ê¹ÓÃnginx×÷Îª²âÊÔµÄ»·¾³
-###1.nginx³£ÓÃÃüÁî
+### ç›®å½•è¯´æ˜ï¼š
 
-nginx -s stop Ç¿ÖÆ¹Ø±Õ  
-nginx -s quit °²È«¹Ø±Õ   
-nginx -s reload ¸Ä±äÅäÖÃÎÄ¼şµÄÊ±ºò£¬ÖØÆônginx¹¤×÷½ø³Ì£¬À´Ê±ÅäÖÃÎÄ¼şÉúĞ§  
-nginx -s reopen ´ò¿ªÈÕÖ¾ÎÄ¼ş  
-
-###2.²ÉÓÃSeajs×÷ÎªÄ£¿é¼ÓÔØÆ÷
-	 ÈçºÎÈÚºÏ²»Í¬×é½¨µÄi18n·½°¸£ºÌá¹©×Ô¼ºµÄlocal·â×°£¬Ìá¹©localÊôĞÔµÄÍâ²¿·ÃÎÊAPI£¬ÔÚ¸øµÚ3·½×é¼ş×ö¸öadapter¡£ 
-	 
-###3.NodeºÍSPM(seajs package manager)ÅäÖÃ 
-     ´Ógit·şÎñÆ÷cloneµÄ´úÂë½¨Òé·Åµ½DÅÌ£¬ÒòÎªnpm config µÄcache /prefix ¶¼ÉèÖÃÎªD:\webui\node-0.8.14\npm
-	 ÔËĞĞµÄÊ±ºòÌí¼Ó¡°d:\webui\node-0.8.14\nodejs;D:\webui\node-0.8.14\npm¡±µ½PATH»·¾³±äÁ¿¡£
-     ¿ÉÒÔÊ¹ÓÃnpm node config²éÑ¯
-     
+webui   
+   -- nginx-1.3.6 é™æ€é¡µé¢çš„webserver  
+         --assets å‰ç«¯å·¥ç¨‹çš„æ‰€æœ‰çš„æ–‡ä»¶
+             src 
+             test
+             docs
+         
+   -- node-0.8.14 spmçš„è¿è¡Œç¯å¢ƒ  
+   -- tools å¼€å‘å¸¸ç”¨çš„å·¥å…·ï¼Œåé¢ä¼šä»gitåº“åˆ é™¤  
    
+   
+### ä½¿ç”¨nginxä½œä¸ºæµ‹è¯•çš„WebServer
+
+nginx -s stop å¼ºåˆ¶å…³é—­  
+nginx -s quit å®‰å…¨å…³é—­   
+nginx -s reload æ”¹å˜é…ç½®æ–‡ä»¶çš„æ—¶å€™ï¼Œé‡å¯nginxå·¥ä½œè¿›ç¨‹ï¼Œæ¥æ—¶é…ç½®æ–‡ä»¶ç”Ÿæ•ˆ  
+nginx -s reopen æ‰“å¼€æ—¥å¿—æ–‡ä»¶  
+
+     
+### SPM(seajs package manager)æ¨¡å—æ‰“åŒ…å·¥å…·
+
+ä»gitæœåŠ¡å™¨cloneçš„ä»£ç å»ºè®®æ”¾åˆ°Dç›˜ï¼Œå› ä¸ºnpm config çš„cacheå’Œprefixå‚æ•°éƒ½è®¾ç½®ä¸ºD:\webui\node-0.8.14\npm
+è¿è¡Œçš„æ—¶å€™æ·»åŠ â€œd:\webui\node-0.8.14\nodejs;D:\webui\node-0.8.14\npmâ€åˆ°PATHç¯å¢ƒå˜é‡ã€‚å·²ç»é¢„è£…å¥½SPMV1.1ç‰ˆæœ¬ã€‚
+
+

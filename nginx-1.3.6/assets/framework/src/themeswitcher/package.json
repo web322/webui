@@ -1,0 +1,15 @@
+{
+    "name": "themeswitcher",
+    "root": "jquery",
+    "version" : "1.0.0",
+
+    "output":{"themeswitcher.js": "."},
+       
+    "spmConfig": {  
+    
+        "build": {
+            "src": ".",
+            "to": "../../modules/{{root}}/{{name}}/{{version}}"
+        }
+    }    
+}

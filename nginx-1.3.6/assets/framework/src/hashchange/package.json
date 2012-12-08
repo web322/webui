@@ -1,0 +1,15 @@
+{
+    "name": "hashchange",
+    "root": "jquery",
+    "version" : "1.3",
+
+    "output":{"hashchange.js": "."},
+       
+    "spmConfig": {  
+    
+        "build": {
+            "src": ".",
+            "to": "../../modules/{{root}}/{{name}}/{{version}}"
+        }
+    }    
+}
