@@ -1,6 +1,6 @@
 ;(function(){
 
-seajs.debug = 1;
+seajs.debug = 0;
 
 // seajs的模块别名，注意如果有代码已经通过别名引用模块，不能随便更改别名。
 
@@ -56,10 +56,17 @@ seajs.config({
     map : map,
     alias : alias,
     debug : seajs.debug,
+    
     preload : [
-        Function.prototype.bind ? '' : 'es5-safe',       //预加载es5的兼容函数
-        this.JSON ? '' : 'json'                           //如果浏览器没有内置JSON支持，则启用脚本。
+       // 'seajs/plugin-combo',    //nginx must install concat module 
+        'seajs/plugin-text',
+        'seajs/plugin-i18n',
+       // 'seajs/plugin-warning',  //support in seajs1.3.1
+        this.JSON ? '' : 'json',                          //如果浏览器没有内置JSON支持，则启用脚本。
+        Function.prototype.bind ? '' : 'es5-safe'      //预加载es5的兼容函数
+                         
     ],
+    locale: 'zh-cn' 
     
 });
 
