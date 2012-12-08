@@ -27,7 +27,7 @@ var alias = {
     '$' : 'gallery/jquery/1.8.3/jquery',
     'jquery.ui' : 'jquery/ui/1.9.2/ui',
     'jquery.cookie' : 'jquery/cookie/1.0.0/cookie',
-    'jquery.themeswitch' : 'jquery/themeswitcher/1.0.0/themeswitcher',
+    'jquery.themeswitcher' : 'jquery/themeswitcher/1.0.0/themeswitcher',
     'jquery.hashchange' : 'jquery/hashchange/1.3/hashchange',
     
 };
