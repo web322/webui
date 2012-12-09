@@ -1,6 +1,9 @@
 CSS布局
 ----
-###
+### 使用JQuery UI Theme 设计登陆页面
+
+
+
 
 
 
@@ -21,4 +24,5 @@ CSS布局
 
 7. [Aptana3 使用不完全指南](http://simpleui.org/category/guides/) Eclipse开发环境搭设
 
+8. [Introduction to Complex UIs Using jQuery UI](http://msdn.microsoft.com/en-us/magazine/hh127352.aspx)  
 

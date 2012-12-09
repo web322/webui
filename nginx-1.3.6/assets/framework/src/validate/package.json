@@ -1,0 +1,15 @@
+{
+    "name": "validate",
+    "root": "jquery",
+    "version" : "1.0.0",
+
+    "output":{"validate.js": "."},
+       
+    "spmConfig": {  
+    
+        "build": {
+            "src": ".",
+            "to": "../../modules/{{root}}/{{name}}/{{version}}"
+        }
+    }    
+}

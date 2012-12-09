@@ -1,0 +1,15 @@
+{
+    "name": "placeholder",
+    "root": "jquery",
+    "version" : "2.0.7",
+
+    "output":{"placeholder.js": "."},
+       
+    "spmConfig": {  
+    
+        "build": {
+            "src": ".",
+            "to": "../../modules/{{root}}/{{name}}/{{version}}"
+        }
+    }    
+}

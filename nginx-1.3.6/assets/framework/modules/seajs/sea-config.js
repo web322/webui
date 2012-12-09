@@ -1,6 +1,6 @@
 ;(function(){
 
-seajs.debug = 0;
+seajs.debug = 1;
 
 // seajs的模块别名，注意如果有代码已经通过别名引用模块，不能随便更改别名。
 
@@ -29,6 +29,8 @@ var alias = {
     'jquery.cookie' : 'jquery/cookie/1.0.0/cookie',
     'jquery.themeswitcher' : 'jquery/themeswitcher/1.0.0/themeswitcher',
     'jquery.hashchange' : 'jquery/hashchange/1.3/hashchange',
+    'jquery.placeholder' : 'jquery/placeholder/2.0.7/placeholder',
+    'jquery.validate' : 'jquery/validate/1.0.0/validate',
     
 };
 
