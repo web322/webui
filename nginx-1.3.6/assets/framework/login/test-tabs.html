@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+    iframe{
+
+      width:100%;
+      height:100%;
+      border:0px;
+    }
+    
+    .nav-tabs > li .close {
+     margin: -2px 0 0 10px;
+     font-size: 18px;
+    }
+
+    </style>
+
+
+
+</head>
+<body>
+
+  <div class="container-fluid">
+     <div class="row-fluid">
+        <div class="span12">
+
+            <ul class="nav nav-tabs" id="myTabs">
+
+               <li>
+                  <a href="#home" data-toggle="tab">Home<em class="close">&times;</em></a>
+               </li>
+
+              <li>
+                  <a href="#dpa" data-toggle="tab">BaiDu<em class="close">&times;</em></a>
+              </li>
+
+              <li>
+                  <a href="#twon" data-toggle="tab">Google<em class="close">&times;</em></a>
+              </li>
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+
+               <div class="tab-pane" id="home">
+                     <p>test</p>       
+                </div>
+
+              <div class="tab-pane" id="dpa" data-src="http://www.baidu.com/">
+                  <iframe src=""></iframe>
+               </div>
+
+              <div class="tab-pane" id="twon">
+                 <p>test</p>  
+              </div>
+            </div>
+        </div>
+    </div>
+</div>​
+
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/application.js"></script>
+
+   <script>
+
+     $('#myTabs a:first').tab('show');
+/*
+     $('#myTabs').bind('show', function(e) {  
+
+	    // identify the tab-pane
+	    paneID = $(e.target).attr('href');
+
+	    // get the value of the custom data attribute to use as the iframe source
+	    src = $(paneID).attr('data-src');
+
+	    //if the iframe on the selected tab-pane hasn't been loaded yet...
+	    if($(paneID+" iframe").attr("src")=="")
+	    {
+	        // update the iframe src attribute using the custom data-attribute value
+	        $(paneID+" iframe").attr("src",src);
+	    }
+	});
+*/
+
+  $('.nav-tabs > li .close').click(function () { 
+    // console.log(this)
+     
+      console.log( $(this).parent.children(0).hmtl());
+      
+
+       $(this).parent().remove()
+
+       //$('#myTabContent div').find()
+     })
+     
+
+   </script>
+</body>
+</html>

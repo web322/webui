@@ -1,13 +1,13 @@
 {
 	"folder_history":
 	[
+		"/D/github/bootstrap/docs"
 	],
-	"last_window_id": 1,
+	"last_window_id": 2,
 	"settings":
 	{
-	},
-	"windows":
-	[
+		"new_window_height": 480.0,
+		"new_window_settings":
 		{
 			"auto_complete":
 			{
@@ -15,9 +15,6 @@
 				[
 				]
 			},
-			"buffers":
-			[
-			],
 			"build_system": "",
 			"command_palette":
 			{
@@ -73,11 +70,224 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 640.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"fu",
+						"function"
+					],
+					[
+						"bor",
+						"border"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "<html>\n<head>\n	<title></title>\n  <meta charset=\"utf-8\">\n    <link href=\"assets/css/bootstrap.css\" rel=\"stylesheet\">\n\n    <style>\n    iframe{\n\n      width:100%;\n      height:100%;\n      border:0px;\n    }\n    \n    .nav-tabs > li .close {\n     margin: -2px 0 0 10px;\n     font-size: 18px;\n    }\n\n    </style>\n\n\n\n</head>\n<body>\n\n  <div class=\"container-fluid\">\n     <div class=\"row-fluid\">\n        <div class=\"span12\">\n\n            <ul class=\"nav nav-tabs\" id=\"myTabs\">\n\n               <li>\n                  <a href=\"#home\" data-toggle=\"tab\">Home<em class=\"close\">&times;</em></a>\n               </li>\n\n              <li>\n                  <a href=\"#dpa\" data-toggle=\"tab\">BaiDu<em class=\"close\">&times;</em></a>\n              </li>\n\n              <li>\n                  <a href=\"#twon\" data-toggle=\"tab\">Google<em class=\"close\">&times;</em></a>\n              </li>\n\n            </ul>\n\n            <div class=\"tab-content\" id=\"myTabContent\">\n\n               <div class=\"tab-pane\" id=\"home\">\n                     <p>test</p>       \n                </div>\n\n              <div class=\"tab-pane\" id=\"dpa\" data-src=\"http://www.baidu.com/\">\n                  <iframe src=\"\"></iframe>\n               </div>\n\n              <div class=\"tab-pane\" id=\"twon\">\n                 <p>test</p>  \n              </div>\n            </div>\n        </div>\n    </div>\n</div>​\n\n  <!-- Le javascript\n    ================================================== -->\n    <!-- Placed at the end of the document so the pages load faster -->\n    <script src=\"assets/js/jquery.js\"></script>\n    <script src=\"assets/js/google-code-prettify/prettify.js\"></script>\n    <script src=\"assets/js/bootstrap-transition.js\"></script>\n    <script src=\"assets/js/bootstrap-alert.js\"></script>\n    <script src=\"assets/js/bootstrap-modal.js\"></script>\n    <script src=\"assets/js/bootstrap-dropdown.js\"></script>\n    <script src=\"assets/js/bootstrap-scrollspy.js\"></script>\n    <script src=\"assets/js/bootstrap-tab.js\"></script>\n    <script src=\"assets/js/bootstrap-tooltip.js\"></script>\n    <script src=\"assets/js/bootstrap-popover.js\"></script>\n    <script src=\"assets/js/bootstrap-button.js\"></script>\n    <script src=\"assets/js/bootstrap-collapse.js\"></script>\n    <script src=\"assets/js/bootstrap-carousel.js\"></script>\n    <script src=\"assets/js/bootstrap-typeahead.js\"></script>\n    <script src=\"assets/js/bootstrap-affix.js\"></script>\n    <script src=\"assets/js/application.js\"></script>\n\n   <script>\n\n     $('#myTabs a:first').tab('show');\n/*\n     $('#myTabs').bind('show', function(e) {  \n\n	    // identify the tab-pane\n	    paneID = $(e.target).attr('href');\n\n	    // get the value of the custom data attribute to use as the iframe source\n	    src = $(paneID).attr('data-src');\n\n	    //if the iframe on the selected tab-pane hasn't been loaded yet...\n	    if($(paneID+\" iframe\").attr(\"src\")==\"\")\n	    {\n	        // update the iframe src attribute using the custom data-attribute value\n	        $(paneID+\" iframe\").attr(\"src\",src);\n	    }\n	});\n*/\n\n  $('.nav-tabs > li .close').click(function () { \n    // console.log(this)\n     \n      console.log( $(this).parent.);\n      \n\n       $(this).parent().remove()\n\n       //$('#myTabContent div').find()\n     })\n     \n\n   </script>\n</body>\n</html>",
+					"file": "/D/github/bootstrap/docs/test-tabs.html",
+					"file_size": 3383,
+					"file_write_time": 129998806047031250,
+					"settings":
+					{
+						"buffer_size": 3244,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"zed c",
+						"Zen Coding: Select between tags"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 93.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/D/github/bootstrap/docs/examples/fluid.html",
+				"/D/github/bootstrap/docs/index.html",
+				"/D/github/bootstrap/docs/base-css.html"
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"css",
+					"meta",
+					"8",
+					"meta"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/D/github/bootstrap/docs"
+				}
+			],
 			"groups":
 			[
 				{
+					"selected": 0,
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/D/github/bootstrap/docs/test-tabs.html",
+							"settings":
+							{
+								"buffer_size": 3244,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1196,
+										1196
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1653.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -112,7 +322,7 @@
 				]
 			},
 			"menu_visible": true,
-			"position": "0,2,3,-1,-1,-1,-1,621,66,87,714",
+			"position": "0,2,3,-32000,-32000,-1,-1,592,44,58,692",
 			"replace":
 			{
 				"height": 0.0
@@ -134,13 +344,13 @@
 				],
 				"width": 0.0
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
 			"side_bar_width": 150.0,
 			"status_bar_visible": true,
-			"window_id": 1,
+			"window_id": 2,
 			"workspace_name": ""
 		}
 	],
