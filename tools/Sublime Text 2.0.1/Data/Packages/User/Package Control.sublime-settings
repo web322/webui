@@ -1,0 +1,16 @@
+{
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"CSS Snippets",
+		"Emmet",
+		"GBK Encoding Support",
+		"HTML Mustache",
+		"HTML5",
+		"jQuery Snippets pack",
+		"JsFormat",
+		"JSHint",
+		"Nodejs",
+		"Package Control"
+	]
+}
